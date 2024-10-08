@@ -46,7 +46,5 @@ export default {
   font-family: Arial, sans-serif;
 }
 
-.container {
-  padding: 20px;
-}
+
 </style>

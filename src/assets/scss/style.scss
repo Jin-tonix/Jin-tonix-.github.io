@@ -1,21 +1,26 @@
-// Base
+/* style.scss */
+
+/* Base */
 @import './base/reset';
 @import './base/common';
 @import './base/variables';
 @import './base/mixin_media';
 @import './base/Bubbles';
 
-// Fonts
+/* Fonts */
 @font-face {
-    font-family: 'Billabong';
-    src: url('./fonts/Billabong.ttf'); /* 폰트 경로 수정 */
+  font-family: 'Billabong';
+  src: url('./fonts/Billabong.ttf') format('truetype'); /* 폰트 경로 수정 */
+  font-weight: normal;
+  font-style: normal;
 }
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
 
-// DESKTOP | Component
+/* DESKTOP | Component */
 @import './desktop/component/Nav';
 @import './desktop/component/Card';
-// DESKTOP | Page
+
+/* DESKTOP | Page */
 @import './desktop/page/App';
 @import './desktop/page/About';
 @import './desktop/page/Skills';
@@ -23,10 +28,11 @@
 @import './desktop/page/Contact';
 @import './desktop/page/Footer';
 
-// TABLET | Component
+/* TABLET | Component */
 @import './tablet/component/Nav';
 @import './tablet/component/Card';
-// TABLET | Page
+
+/* TABLET | Page */
 @import './tablet/page/App';
 @import './tablet/page/About';
 @import './tablet/page/Skills';
@@ -34,10 +40,11 @@
 @import './tablet/page/Contact';
 @import './tablet/page/Footer';
 
-// MOBILE | Component
+/* MOBILE | Component */
 @import './mobile/component/Nav';
 @import './mobile/component/Card';
-// MOBILE | Page
+
+/* MOBILE | Page */
 @import './mobile/page/App';
 @import './mobile/page/About';
 @import './mobile/page/Skills';
@@ -45,10 +52,11 @@
 @import './mobile/page/Contact';
 @import './mobile/page/Footer';
 
+/* 이미지 경로 수정 */
 .profile-img {
-  background-image: url('~@/assets/images/profileImg.webp');
+  background-image: url('../images/profileImg.webp'); /* 상대 경로로 수정 */
 }
 
 .letter-img {
-  background-image: url('~@/assets/images/letter.jpg');
+  background-image: url('../images/letter.jpg'); /* 상대 경로로 수정 */
 }

@@ -25,7 +25,7 @@
           </ul>
           <ul>
             <li>
-              <a href="https://github.com/Jin-tonix"><font-awesome-icon :icon="['fab', 'github']" /><span>Git</span></a>
+              <a href="https://github.com/Jin-tonix"><font-awesome-icon :icon="['fab', 'github']" /><span>Git "https://github.com/Jin-tonix/Jin-tonix-.github.io.git"</span></a>
             </li>
             <li><a href="https://velog.io/@Jin-tonix"><font-awesome-icon :icon="['fab', 'blogger']" /><span>BLOG</span></a></li>
           </ul>

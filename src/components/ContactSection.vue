@@ -66,7 +66,7 @@ input, textarea {
 
 button {
   padding: 10px;
-  background-color: #b0e5f8;
+  background-color: #4caf50;
   color: white;
   border: none;
   border-radius: 5px;
@@ -75,7 +75,7 @@ button {
 }
 
 button:hover {
-  background-color: #b0e5f8;
+  background-color: #45a049;
 }
 
 /* 반응형 디자인 */

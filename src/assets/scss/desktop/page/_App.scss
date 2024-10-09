@@ -10,7 +10,7 @@
         }
 
         section {
-            padding: 100px 0;
+            padding: 60px 0; /* 상단과 하단 패딩을 줄여서 글씨가 더 위로 올라가도록 설정 */
             border-bottom: 2px dashed rgb(206, 184, 184);
 
             &#contact {
@@ -21,6 +21,7 @@
                 font-size: 36px;
                 font-weight: 700;
                 text-align: center;
+                margin-bottom: 20px; /* 글씨 아래 여백을 추가 */
             }
         }
     }

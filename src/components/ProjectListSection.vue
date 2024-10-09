@@ -66,3 +66,62 @@ export default {
 };
 </script>
 
+<style scoped>
+/* 페이지 전체 배경을 투명하게 설정 */
+body {
+  background-color: transparent; /* 기본 배경을 투명하게 설정 */
+  margin: 0;
+  padding: 0;
+}
+
+#projects {
+  padding: 40px;
+  background-color: transparent; /* 프로젝트 섹션의 배경을 투명하게 설정 */
+  min-height: 100vh; /* 세로 길이를 페이지 전체에 맞춤 */
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* 카드가 여러 열로 자동 배치되도록 설정 */
+  gap: 20px; /* 카드 사이 간격 설정 */
+  padding: 20px;
+}
+
+.projects-grid > div {
+  transition: transform 0.3s ease;
+}
+
+.projects-grid > div.flip {
+  transform: rotateY(0deg);
+}
+
+.projects-grid > div.active {
+  transform: rotateY(180deg);
+}
+
+.flipBtn {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.flip-all {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.flip-all:hover {
+  background-color: #0056b3;
+}
+
+/* 카드가 세로로 더 길어지도록 설정 */
+.project-item-card {
+  width: 100%;
+  max-width: 500px;
+  height: 600px; /* 세로 길이를 더 길게 설정 */
+}
+</style>

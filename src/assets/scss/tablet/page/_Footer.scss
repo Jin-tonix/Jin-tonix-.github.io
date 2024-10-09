@@ -1,43 +1,55 @@
-@include tablet() {
+@include desktop() {
     footer {
-        position: absolute;
+        position: relative;
         left: 0;
         right: 0;
 
         .footer-inner {
-            background-color: #7882A4;
-
+            position: absolute;
+            bottom: 0; /* SVG와 겹쳐지도록 아래쪽에 배치 */
+            left: 0;
+            right: 0;
+            width: 100%; /* 전체 너비 사용 */
+            height: 60px; /* 원하는 높이 설정 */
+            display: flex;
+            justify-content: flex-end; /* 오른쪽 정렬 */
+            align-items: center;
+            background-color: transparent; /* footer-inner의 배경 투명 */
+            z-index: 2; /* SVG 위에 표시되도록 설정 */
+            
             .container {
                 display: flex;
-                justify-content: flex-end;
+                justify-content: flex-end; /* 글자를 오른쪽으로 정렬 */
                 align-items: center;
-                height: 60px;
-                padding: 20px;
-                font-size: 14px;
-                color: #fff;
+                height: 100%;
+                padding-right: 40px; /* 글씨를 더 오른쪽으로 이동 */
+                font-size: 16px;
+                color: #fff; /* 텍스트 색상을 흰색으로 설정 */
+                background-color: transparent; /* 컨테이너 배경을 투명으로 설정 */
             }
         }
 
         // Wave
         .custom-shape-divider-bottom-1656519457 {
             position: absolute;
-            bottom: 59px;
+            bottom: 0;
             left: 0;
             width: 100%;
             overflow: hidden;
             line-height: 0;
-            transform: rotate(180deg);
+            z-index: 1; /* SVG는 텍스트 뒤에 위치 */
+            transform: rotate(180deg); /* SVG 회전 유지 */
         }
 
         .custom-shape-divider-bottom-1656519457 svg {
             position: relative;
             display: block;
             width: calc(114% + 1.3px);
-            height: 50px;
+            height: 60px;
         }
 
         .custom-shape-divider-bottom-1656519457 .shape-fill {
-            fill: #7882A4;
+            fill: #b3ecff; /* 색상 변경 */
         }
     }
 }

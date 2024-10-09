@@ -17,7 +17,6 @@
           class="shape-fill"
         ></path>
       </svg>
-      <!-- 푸터 글귀를 SVG 안에 넣습니다 -->
       <div class="footer-inner">
         <div class="container">
           © 2024. Web developer portfolio -- by Jinhee Mok 💗
@@ -33,6 +32,4 @@ export default {
 };
 </script>
 
-<style scoped>
-
-</style>
+<!-- Scoped 스타일링을 사용하지 않고, 스타일을 글로벌로 적용 -->

@@ -43,11 +43,11 @@
                         height: 30px;
                         padding: 0 20px;
                         border-radius: 0 15px 15px 0;
-                        background: linear-gradient(90deg, rgba(254, 233, 178, 1) 0%, rgba(255, 200, 152, 1) 100%);
+                        background: linear-gradient(90deg, #8de2e4 0%, #8de2e4 100%); /* 색상 수정 */
                         animation: SkillUp 4s linear;
 
                         .percent {
-                            color: #fff;
+                            color: #030000;
                             font-size: 18px;
                         }
                     }
@@ -68,6 +68,5 @@
                 width: 100%;
             }
         }
-
     }
 }
